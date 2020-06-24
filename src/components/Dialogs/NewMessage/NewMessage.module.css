@@ -1,0 +1,46 @@
+.newMessageForm {
+
+    margin-left: auto;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.wrapper {
+    position: absolute;
+    margin-left: auto;
+    display: flex;
+    flex-direction: row;
+    right: 0;
+    bottom: 0;
+    width: 70%;
+}
+
+textarea {
+    resize: none;
+    width: 80%;
+    height: 50px;
+    z-index: 1  ;
+    border: none;
+    padding: 15px;
+}
+
+.sub {
+    height: 50px;
+    border: none;
+    padding: 5px;
+    width: 20%;
+    cursor: pointer;
+}
+
+sub:active,
+sub:focus {
+    outline: none;
+}
+
+sub:active {
+    background-color: rebeccapurple;
+    color: wheat;
+}

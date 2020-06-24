@@ -1,0 +1,60 @@
+.wrapper {
+    height: calc(100vh - 60px);
+    padding: 10px;
+    
+}
+
+.wrapper h2 {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.chat {
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+    border: 1px solid wheat;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    position: relative;
+}
+.sidebar {
+    background-color: gainsboro;
+    min-height: 100%;
+    width: 30%;
+    height: 70vh;
+    overflow-y: scroll;
+}
+
+.messages {
+    background-color: burlywood;
+    min-height: 100%;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    overflow: hidden;
+    overflow-y: scroll;
+    height: calc(70vh - 50px);
+}
+
+.list {
+    padding: 20px 0 0 0 ;
+    margin: 0;
+    list-style: none;
+}
+
+.sidebar::-webkit-scrollbar,
+.messages::-webkit-scrollbar
+{
+	width: 6px;
+    background-color: #F5F5F5;
+}
+
+.sidebar::-webkit-scrollbar-thumb,
+.messages::-webkit-scrollbar-thumb
+{
+    background-color: purple;
+    border-radius: 3px;
+}
