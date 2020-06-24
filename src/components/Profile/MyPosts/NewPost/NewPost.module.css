@@ -1,0 +1,39 @@
+.posts__new {
+  width: 100%;
+}
+
+.posts__new form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.posts__new textarea {
+  display: block;
+  width: 100%;
+  height: 60px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  padding: 10px;
+  resize: none;
+  background-color: #f4f4f4;
+  border: 1px solid #e57373;
+
+  font-size: 18px;
+}
+
+ .posts__new button {
+  width: 100px;
+  height: 40px;
+  margin-left: auto;
+  margin-right: 0;
+
+}
+

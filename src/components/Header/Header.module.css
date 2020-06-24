@@ -1,0 +1,47 @@
+.header {
+    grid-area: h;
+    background-color: #313131;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  
+  .header img {
+    display:block;
+    width: 50px;
+  }
+
+  .loginWrapper {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    padding-right: 20px;
+  }
+
+  .loginWrapper a {
+    color: wheat;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .loginInner {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    width: 150px;
+  }
+
+  .logout {
+    border: none;
+    background: none;
+    width: 30px;
+    cursor: pointer;
+    padding: 0;
+  }
+
+  .logout:hover svg {
+    fill: #fff;
+  }

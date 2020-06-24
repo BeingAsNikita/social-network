@@ -1,0 +1,30 @@
+.nav {
+  grid-area: n;
+  background-color: #525252;
+}
+
+.nav ul {
+  padding: 10px 0;
+  margin: 0;
+  list-style: none;
+}
+
+.nav a {
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  padding: 5px 20px;
+  cursor: pointer;
+}
+
+.nav a:hover {
+  color: black;
+}
+
+.nav .active {
+  color: black;
+}
+
+.nav li:last-child {
+  margin-top: 30px;
+}

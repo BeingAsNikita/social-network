@@ -1,0 +1,25 @@
+.formControl {
+    width: 100%;
+    position: relative;
+}
+
+.formControl.error input,
+.formControl.error textarea {
+    border: 1px solid red;
+    width: 100%;
+
+}
+
+.alert {
+    font-size: 10px;
+    position: absolute;
+    bottom: -15px;
+    left: 0;
+    border-radius: 5px;
+    padding: 10px;
+    color: red;
+}
+
+.wrap {
+    position: relative;
+}

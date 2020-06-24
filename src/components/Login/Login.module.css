@@ -1,0 +1,54 @@
+
+
+.login {
+    font-size: 20px;
+}
+
+h1 {
+    margin: 10px;
+    padding: 0;
+    text-align: center;
+}
+
+form {
+    width: 40%;
+    padding: 30px;
+    margin: 0 auto;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.field {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 5px;
+    width: 100%;
+}
+
+.checkboxWrap {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: left;
+    margin-bottom: 10px;
+}
+
+.checkboxWrap input {
+    margin-right: 10px;
+}
+
+.checkboxWrap label {
+    margin: 0;
+    font-size: 14px;
+}
+
+button {
+    width: 150px;
+    height: 30px;
+    margin-left: auto;
+}

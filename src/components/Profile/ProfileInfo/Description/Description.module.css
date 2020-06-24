@@ -1,0 +1,14 @@
+.profile__description {
+}
+
+.profile__description h2 {
+  margin: 0;
+}
+
+.description__wrap {
+  padding: 0px 15px;
+
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
