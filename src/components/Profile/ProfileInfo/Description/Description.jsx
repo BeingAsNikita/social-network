@@ -6,14 +6,14 @@ import ProfileStatusHook from '../ProfileStatus/ProfileStatusHook';
 
 const Description = (props) => {
   return (
-    
+
     <div className={css.description__wrap}>
-      <ProfileStatusHook status={props.status} updateStatus={props.updateStatus}/>
+      <ProfileStatusHook status={props.status} updateStatus={props.updateStatus} />
       <div className={css.profile__description}>
         <h2>{props.fullName}</h2>
-        <p>Обо мне: {props.aboutMe}</p>
-        <p>Соц сети</p>
-        <p>Образование</p>
+        <p>About me: {props.aboutMe}</p>
+        <p>Contacts: {}</p>
+        <p>lookingForAJob</p>
         <p>Сайт</p>
 
       </div>

@@ -16,7 +16,9 @@ const ProfileInfo = (props) => {
 
 
       <div className={css.profile__info}>
-        <ProfileAvatar img={props.profile.photos.large} />
+        <ProfileAvatar img={props.profile.photos.large}
+          isOwner={props.isOwner}
+          savePhoto={props.savePhoto} />
 
         <Description fullName={props.profile.fullName}
           aboutMe={props.profile.aboutMe}

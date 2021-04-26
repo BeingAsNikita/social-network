@@ -5,7 +5,7 @@ const ADD_POST = 'ADD_POST';
 const SET_USER_PROFILE = 'SET_USER_PROFILE';
 const DELETE_POST = 'DELETE_POST';
 const GET_PROFILE_STATUS = 'GET_PROFILE_STATUS';
-
+const GET_PROFILE_PHOTO = 'GET_PROFILE_PHOTO';
 
 
 
@@ -66,6 +66,12 @@ export const profileReduser = (state = initialState, action) => {
     case GET_PROFILE_STATUS:
       return { ...state, status: action.payload }
 
+    case GET_PROFILE_PHOTO:
+      debugger
+      return {
+        ...state,
+        profile: {...state.profile, photos: action.payload}
+      }
 
     default:
       return state
@@ -87,6 +93,16 @@ export const getUserStatusSuccess = (status) => {
   return {
     type: GET_PROFILE_STATUS,
     payload: status,
+  }
+}
+
+export const savePhotoSuccess = (photos) => {
+  return {
+    type: GET_PROFILE_PHOTO,
+    payload: {
+      small: photos.small,
+      large: photos.large
+    },
   }
 }
 
@@ -112,6 +128,15 @@ export const updateUserStatus = (status) => {
     let res = await profileAPI.updateStatus(status)
     if (res.data.resultCode === 0) {
       dispatch(getUserStatusSuccess(status))
+    }
+  }
+}
+
+export const savePhoto = (file) => {
+  return async dispatch => {
+    let res = await profileAPI.savePhoto(file)
+    if (res.data.resultCode === 0) {
+      dispatch(savePhotoSuccess(res.data.data.photos))
     }
   }
 }

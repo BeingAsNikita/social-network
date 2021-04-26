@@ -14,6 +14,8 @@ const Profile = (props) => {
       <ProfileInfo profile={props.profile}
         status={props.status}
         updateStatus={props.updateUserStatus}
+        isOwner={props.isOwner}
+        savePhoto={props.savePhoto}
          />
       <MyPosts data={props.data} dispatch={props.dispatch} store={props.store} />
     </div>
